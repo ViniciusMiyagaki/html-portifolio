@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+p,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.button {
+  position: absolute;
+  color: grey;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  font-size: smaller;
+  text-align: right;
+  z-index: 1000000;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: rgb(104, 77, 224);
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.redes {
+  display: flex;
+  text-align: center;
+}
+
+.redes img {
+  max-height: 35px;
+  margin-left: 10px;
+  transition: 0.5s;
+  margin-top: 5.5px;
+}
+
+.redes img:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.button img {
+  max-height: 25px;
+}
+
+.logo {
+  max-height: 23px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin-left: 15px;
+}
+
+.logo2 {
+  max-height: 23px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin-left: 15px;
+}
+
+.logo_Skills {
+  max-height: 35px;
+  background-color: white;
+  margin-left: 5px;
+}
+
+.logo_Skills_Right {
+  max-height: 35px;
+  background-color: white;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.logo_Date {
+  display: flex;
+  align-items: center;
+}
+
+.logo_Date a {
+  transition: 0.5s;
+}
+
+.logo_Date a:hover {
+  opacity: 0.5;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .content {
+  position: relative;
+  max-width: 750px;
+  text-align: center;
+}
+
+.banner .content h2 {
+  color: #fff;
+  margin: 100px 0;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.banner .content p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.banner header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.banner header img {
+  max-height: 35px;
+  margin-right: 10px;
+}
+
+.banner header .logo_Banner {
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.certificados,
+.projetos,
+.habilidades,
+.contato {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.certificados .contentBx {
+  background: white;
+  padding: 100px;
+  width: 50%;
+  text-align: justify;
+}
+
+.certificados .imgBx,
+.projetos .imgBx {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-control-prev-icon {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #aba8b281;
+}
+
+.carousel-control-next-icon {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #aba8b281;
+}
+
+.carousel-indicators li {
+  background-color: rgba(83, 83, 83, 0.5);
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.carousel-indicators .active {
+  background-color: rgb(19, 19, 19);
+}
+
+.certificados .imgBx img,
+.projetos .imgBx img {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.projetos .contentBx {
+  background: black;
+  padding: 100px;
+  width: 50%;
+  text-align: justify;
+}
+
+.projetos .imgBx {
+  background: black;
+}
+
+.habilidades .contentBx1,
+.habilidades .contentBx2,
+.habilidades .contentBx3,
+.habilidades .contentBx4 {
+  background: white;
+  padding: 100px;
+  width: 25%;
+  text-align: justify;
+}
+
+.habilidades .contentBx2 .heading,
+.habilidades .contentBx3 .heading,
+.habilidades .contentBx4 .heading {
+  visibility: hidden;
+}
+
+.contato .contentBx1,
+.contato .contentBx2 {
+  background: black;
+  padding: 100px;
+  width: 50%;
+  text-align: justify;
+}
+
+.contato .contentBx2 .heading {
+  height: 96px;
+  margin-bottom: 0;
+}
+
+.heading {
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+.headingWhite {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+  margin-top: 5px;
+}
+
+.text {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.textWhite {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1020px) {
+  * {
+    flex-wrap: wrap;
+  }
+
+  .certificados,
+  .projetos,
+  .habilidades,
+  .contato {
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+
+  .certificados .contentBx,
+  .projetos .contentBx {
+    padding: 25px;
+    width: 100%;
+  }
+
+  .certificados .imgBx,
+  .projetos .imgBx {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .certificados .imgBx img,
+  .projetos .imgBx img {
+    max-width: 100%;
+  }
+
+  .projetos {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .projetos .contentBx {
+    padding: 25px;
+    width: 100%;
+  }
+
+  .habilidades .contentBx1 {
+    padding: 25px 25px 0 25px;
+    width: 100%;
+  }
+
+  .habilidades .contentBx2,
+  .habilidades .contentBx3 {
+    padding: 0 25px;
+    width: 100%;
+  }
+
+  .habilidades .contentBx4 {
+    padding: 0 25px 25px 25px;
+    width: 100%;
+  }
+
+  .habilidades .contentBx2 .heading,
+  .habilidades .contentBx3 .heading,
+  .habilidades .contentBx4 .heading {
+    display: none;
+  }
+
+  .contato .contentBx1,
+  .contato .contentBx2 {
+    padding: 25px;
+    width: 100%;
+  }
+
+  .contato .contentBx1 {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .contato .contentBx2 {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .contato .contentBx2 .heading {
+    display: none;
+  }
+
+  .banner header {
+    padding: 10px 25px;
+    padding-top: 40px;
+    justify-content: space-between;
+  }
+
+  .banner .content {
+    padding: 25px;
+  }
+
+  .button {
+    font-size: 10px;
+  }
+
+  .redes img {
+    max-height: 30px;
+  }
+}
